@@ -13,3 +13,11 @@ function add(): number {
 function sum(a: number, b: number): number {
   return a + b;
 }
+sum(1, 4);
+
+// 함수의 옵셔널 파라미터 ? (선택사항)
+function log(a: string, b?: string) {
+
+}
+log('hello wrold');
+log('hello ts', 'abc');
