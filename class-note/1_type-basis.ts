@@ -28,6 +28,3 @@ let person: { name: string, age: number} = {
 
 // TS 진위값
 let show: boolean = true;
-
-//
-//
