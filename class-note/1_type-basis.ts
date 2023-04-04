@@ -11,3 +11,5 @@ let num: number = 10;
 let arr: Array<Number> = [1,2,3];
 let heroes: Array<string> = ['Capt', 'Thor', 'Hulk', '10'];
 let items: number[] = [1,2,3];
+
+//
