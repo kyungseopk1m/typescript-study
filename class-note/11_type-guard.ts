@@ -12,7 +12,7 @@ function introduce(): Developer | Person {
     return { name: 'Tony', age: 33, skill: 'Iron Making' }
 }
 var tony = introduce();
-console.log(tony.skill);
+// console.log(tony.skill);
 
 if ((tony as Developer).skill) {
     var skill = (tony as Developer).skill;
