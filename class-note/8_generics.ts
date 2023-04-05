@@ -57,7 +57,7 @@ interface Dropdown<T> {
     value: T;
     selected: boolean;
 }
-const obj: Dropdown<number> = { value: 'abc', selected: false };
+const obj: Dropdown<string> = { value: 'abc', selected: false };
 
 // 제네릭의 타입 제한
 // function logTextLength<T>(text: T[]): T[] {
@@ -77,7 +77,7 @@ function logTextLength<T extends LengthType>(text: T): T {
     text.length;
     return text;
 }
-logTextLength(10);
+// logTextLength(10);
 logTextLength({ length: 10 });
 
 // 제네릭 타입 제한 3 - keyof
