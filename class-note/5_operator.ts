@@ -27,9 +27,25 @@ interface Person {
     age: number;
 }
 
-function askSomeone(someone: Developer | Person) {
+// function askSomeone(someone: Developer | Person) {
+//     // someone.name;
+//     // 유니온 타입 : 보장된(공통된) 속성만 제공!
+//     // someone.skill
+//     // someone.age
+// }
+
+// askSomeone({ name: '디벨로퍼', skill: '웹 개발'});
+// askSomeone({ name: '캡틴', age: 100});
+
+function askSomeone(someone: Developer & Person) {
     someone.name;
-    // 유니온 타입 : 보장된(공통된) 속성만 제공!
-    // someone.skill
-    // someone.age
+    someone.skill
+    someone.age
 }
+
+askSomeone({ name: '디벨로퍼', skill: '웹 개발', age: 34});
+// askSomeone({ name: '캡틴', age: 100});
+
+
+// var seho: string | number | boolean;
+// var capt: string & number & boolean;
